@@ -1,0 +1,25 @@
+Tra FRONTEND e BACKEND vi sono in mezzo i WebService. Noi useremo le APIREST.
+Per aiutarci a prendere la richiesta e scomporla per poterla utilizzare ci viene in  aiuto SPRING.
+https://spring.io/
+
+SpringBoot ci dà la possibilità di creare un controller Rest, ovvero quello per creare API REST.
+Se vediamo la documentazione nel sito c'è tutto. 
+
+Come funziona?
+Cliccando su Spring Inizializer possiamo generare un progetto per realizzare il nostro Rest Controller. 
+Ma noi siccome siamo stronzi utilizziamo IntelliJ e quando creiamo il progetto selezioniamo Spring Inizializer, usiamo Java per programmare,
+next e aggiungiamo 2 dipendenze:
+- DevTools > SpringBoot che è un Tool per fare l'HotLoad, ovvero appena modifico il file e lo salvo, la modifica viene riportata nel file del programma
+- Web > Rest Repositories, ci serve per avere tutti i tag per creare delle API REST. 
+	Con Tag si intendono le @. Quando noi creiamo il progetto ci va già a creare il tag JavaSpringBootApplication. 
+
+I TAG principali sono Java Rest Controller e SpringBootApplication. 
+SpringbootApplication ci continua ad eseguire la classe, in modo tale da attendere le richieste. 
+Le richieste vengono viste da @GetMapping (richieste GET), andrà a verificare che vi siano delle richieste e mette le richieste dopo "Hello". Ad esempio
+se con PostMan iviamo una richiesta con scritto diego, il server ci restituirà "Hello Diego". 
+Possiamo farci restituire dal server anche Json e tutte le altre strutture Java.
+
+Utilizziamo il PostMapping per fare le richieste di Login e Registrazione in modalità Post. 
+
+[Inserirà del codice su classroom per tutto ciò]
+[POST MAN - Ottimo programma per testare le API e vedere tutte le varie richieste. Lo facciamo partire sulla porta 8080 e possiamo inviare le richieste]
